@@ -9,10 +9,30 @@
 
 body {
     background-color: #f1f4fe;
-    height: 100vh;
+    height: 300vh;
     font-family: "Roboto Condensed", sans-serif;
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+}
+/* WebKit ბრაუზერებისთვის */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
+::-webkit-scrollbar-track {
+    background: #1f356b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1f4fe;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: rgb(129, 133, 192); /* ან უფრო მუქი ლურჯი */
+}
 
 header {
     width: 100%;
@@ -164,4 +184,191 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 50px;
+}
+
+
+.section-1{
+    width: 100%;
+    height: 70vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+
+.parent-div {
+    background-color: white;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 20px;
+    height: 100%;
+    width: 33.33%;
+
+}
+
+.form-div {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 100%;
+
+}
+
+#enter-task {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 230, 227);
+    color: #f58090;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    transition: 4s;
+    animation: task 1s ease;
+}
+
+@keyframes task {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+form input {
+    border: none;
+    padding: 13px 10px 13px 20px;
+    border-radius: 8.5px;
+    background-color: #f0f3fc;
+    outline: none;
+    caret-color: black;
+    font-size: 1.03rem;
+    color: #7b7c7d;
+    
+
+}
+
+form input::placeholder {
+    color: #a2a4a7;
+    font-size: 1rem;
+}
+
+
+button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #1f356b, #4760b1);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 600;
+
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #1f2937;
+
+}
+
+#task-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 100%;
+
+
+}
+
+#task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    width: 100%;
+
+
+}
+
+
+.task-div-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.142);
+    border-radius: 10px;
+}
+
+.x {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: 60%;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    caret-color: transparent;
+    background-color: green;
+    accent-color: green;
+    cursor: pointer;
+}
+
+#task-div-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.142);
+    border-radius: 10px;
+}
+
+#task-div-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.142);
+    border-radius: 10px;
+}
+
+
+.todo-app{
+    font-weight: 600;
+    font-size: 1.9rem;
 }
