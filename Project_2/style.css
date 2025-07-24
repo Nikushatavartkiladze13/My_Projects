@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+}
+
+body {
+    background-color: #f1f4fe;
+    height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.person_img {
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+.home {
+    width: 2.5rem;
+    color: #1f356b;
+    cursor: pointer;
+}
+
+.Hub {
+    color: #1f356b;
+    font-weight: 900;
+}
+
+#search-img,
+#dark {
+    width: 2.3em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button-1,
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    width: 45px;
+    height: 45px;
+    transition: 0.5s;
+    border-radius: 3.5px;
+    font-size: 1rem;
+}
+
+
+.button-1:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
+
+.register {
+    padding: 15px 18px;
+    margin-left: 25px;
+    border: none;
+    background-image: linear-gradient(to right, #1f356b, #4760b1);
+    color: white;
+    font-size: 15px;
+    border-radius: 4.5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#search:hover,
+.register:hover {
+    transform: scale(1.08);
+}
+
+.button-1:active,
+.register:active {
+    transform: scale(0.9);
+}
+
+.FocusHub {
+    font-size: 2.5rem;
+    /* letter-spacing: 1px; */
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form {
+
+    padding: 4px 10px;
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    animation: form 1s ease;
+
+}
+
+.input {
+    padding: 10px 80px 10px 14px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    caret-color: black;
+    background-color: #f1f4fe;
+}
+
+
+.input::placeholder {
+    color: #1f356b;
+    font-size: 15px;
+
+}
+
+
+@keyframes form {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+
+.hero-section{
+    width: 100%;
+    height: 70vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-div{
+    background-color: #1f356b;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
